@@ -1,18 +1,54 @@
 
-.container {
+.container 
+{
     display: flex;
 }
 
-#containerForm {
+#containerForm 
+{
     inline-size: 30%; /* ou qualquer valor proporcional */
     padding: 10px;
     box-sizing: border-box;
 }
-#containerCod{
+
+#containerCodPreview
+{
     inline-size: 70%; /* ou qualquer valor proporcional */
     padding: 10px;
     box-sizing: border-box;
+    position: relative;
 }
-#btGerarCod{
+
+.content
+{
+    display: none;
+    inline-size: 100%;
+    block-size: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    position: absolute;
+    inset-block-start: 0;
+    inset-inline-start: 0;
+} 
+
+.active
+{
+    display: block;
+}
+
+#btGerarCod
+{
     block-size: 50px;
 }
+
+#altura,#largura
+{
+    inline-size: 40px;
+}
+
+#pagina
+{
+    inline-size: 100%;
+    block-size: 100%;
+}
+
